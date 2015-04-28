@@ -1,0 +1,12 @@
+<template name="books">
+  <h1>Books</h1>
+  <p>Template for showing list of books...</p>
+
+  {{#if books.count}}
+    <ul>
+      {{#each books}}
+        <li>{{title}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</template>

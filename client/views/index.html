@@ -1,0 +1,20 @@
+<head>
+  <title>meteor-boilerplate</title>
+  <meta name="description" content="Learn to code interactively for free" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+</body>
+
+<template name="layout">
+  <a href="{{pathFor 'home'}}">Home</a> |
+  <a href="{{pathFor 'books'}}">Books</a>
+
+  {{> yield}}
+
+  <hr />
+  <p>Made with:</p>
+  <p><img src="/img/favicon.png" alt="meteor favion" /></p>
+</template>
